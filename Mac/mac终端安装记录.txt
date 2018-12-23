@@ -24,5 +24,10 @@ cat ~/.ssh/id_rsa.pub
 然后登陆github网站，进入账户-->Settings-->SSH and GPG keys-->New SSH key,然后将上面～/.ssh/id_rsa.pub文件中的内容粘贴进来，保存即可，之后即可使用git clone等命令了。
 
 安装Python3
+Mac系统是自带python的，只是版本较低，为2.*版本，可进/System/Library/Frameworks/Python.framework/Version目录查看，因此可以直接安装较高的3.*版本，安装命令如下：
 brew install python3
+注：Updating HomeBrew...这里等了好久
+安装路径：/usr/local/bin/python3
+安装版本：3.7.1
+对应的pip使用：python3 -m pip blabla
 
