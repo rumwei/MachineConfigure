@@ -23,4 +23,6 @@ brew list   ----列出当前安装的软件
 cat ~/.ssh/id_rsa.pub
 然后登陆github网站，进入账户-->Settings-->SSH and GPG keys-->New SSH key,然后将上面～/.ssh/id_rsa.pub文件中的内容粘贴进来，保存即可，之后即可使用git clone等命令了。
 
+安装Python3
+brew install python3
 
