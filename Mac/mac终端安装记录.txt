@@ -1,0 +1,26 @@
+该记录从新装系统之后开始：
+
+Brew安装：
+Brew是Mac系统下的包管理工具，类似CentOS下的yum等
+Brew安装：
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+注：此安装较为花时间
+Brew使用（以安装nodejs为例）：
+brew install nodejs   ----安装nodejs
+brew install nodejs@2.1   ----安装指定版本的软件
+brew update nodejs   ----升级nodejs
+brew remove nodejs   ---卸载nodejs
+brew list   ----列出当前安装的软件
+
+安装Git
+在终端输入git命令，系统就会提示安装xcode，跟着提示安装完xcode，git也就安装上了，因为xcode里集成了git，若想单独安装也是可以的。
+
+配置与GitHub仓库相关连的SSH：
+* git config --global user.name "rumwei"
+* git config --global user.email "isguwei@163.com"
+* ssh-keygen -t rsa -C "isguwei@163.com"
+执行完第三步，即可利用如下命令来查看所生成的密匙，复制该密钥
+cat ~/.ssh/id_rsa.pub
+然后登陆github网站，进入账户-->Settings-->SSH and GPG keys-->New SSH key,然后将上面～/.ssh/id_rsa.pub文件中的内容粘贴进来，保存即可，之后即可使用git clone等命令了。
+
+
