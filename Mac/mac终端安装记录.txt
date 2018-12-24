@@ -33,4 +33,11 @@ brew install python3
 
 安装mysql：
 去mysql官网下载的.dmg文件安装，下载的是MySQL Community Server 8.0.13
+root用户名：root
+root密码：2011g&......
+安装完成后在～/.bash_profile文件中（如果没有则新建）加入如下配置：
+PATH=$PATH:/usr/local/mysql/bin
+添加完成后，在终端执行source ~/.bash_profile
+之后即可在终端通过mysql -uroot -p来登陆数据库了
+数据库中自带有information_schema,mysql,performance_schema,sys四个初始数据库
 
