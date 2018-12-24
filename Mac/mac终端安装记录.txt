@@ -41,3 +41,22 @@ PATH=$PATH:/usr/local/mysql/bin
 之后即可在终端通过mysql -uroot -p来登陆数据库了
 数据库中自带有information_schema,mysql,performance_schema,sys四个初始数据库
 
+安装nodejs(自带npm)
+去https://nodejs.org/zh-cn/download/官网下载macOS安装包node-v10.14.2.pkg
+然后双击根据提示安装即可
+           版本            安装目录  
+Node.js    v10.14.2       /usr/local/bin/node
+npm        v6.4.1         /usr/local/bin/npm
+
+
+
+
+
+
+
+
+
+
+
+
+
