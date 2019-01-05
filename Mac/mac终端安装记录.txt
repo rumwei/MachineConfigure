@@ -52,6 +52,9 @@ npm        v6.4.1         /usr/local/bin/npm
 python3 -m pip install virtualenv
 成功安装16.2.0版本的virtualenv
 
+安装jdk,采用安装包的形式安装
+版本java8
+
 
 
 
