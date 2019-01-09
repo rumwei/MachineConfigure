@@ -54,6 +54,8 @@ python3 -m pip install virtualenv
 
 安装jdk,采用安装包的形式安装
 版本java8
+安装目录：/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/bin
+idea使用的jvm配置在idea自身的安装目录下
 
 
 
