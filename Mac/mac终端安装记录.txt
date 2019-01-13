@@ -40,6 +40,7 @@ PATH=$PATH:/usr/local/mysql/bin
 添加完成后，在终端执行source ~/.bash_profile
 之后即可在终端通过mysql -uroot -p来登陆数据库了
 数据库中自带有information_schema,mysql,performance_schema,sys四个初始数据库
+新增perch用户，并赋予perch用户fortest数据库的所有控制权限
 
 安装nodejs(自带npm)
 去https://nodejs.org/zh-cn/download/官网下载macOS安装包node-v10.14.2.pkg
