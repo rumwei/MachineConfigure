@@ -58,6 +58,9 @@ python3 -m pip install virtualenv
 安装目录：/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/bin
 idea使用的jvm配置在idea自身的安装目录下
 
+安装gpg--用于上传构建到maven中央仓库
+安装命令：brew install gpg
+
 
 
 
