@@ -61,6 +61,16 @@ idea使用的jvm配置在idea自身的安装目录下
 安装gpg--用于上传构建到maven中央仓库
 安装命令：brew install gpg
 
+Redis安装：
+具体教程见有道云笔记
+本机安装版本5.0.4
+安装目录/usr/local
+
+Docker安装
+版本：18.09.4
+
+.m2文件夹： ～/.m2
+
 
 
 
