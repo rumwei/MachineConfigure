@@ -5,12 +5,16 @@ Brew是Mac系统下的包管理工具，类似CentOS下的yum等
 Brew安装：
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 注：此安装较为花时间
+brew update镜像替换(已替换，替换日期2019-09-18) 替换方法见有道云笔记-->杂货铺-->mac.note文档-->2.替换homebrew的formula索引镜像
 Brew使用（以安装nodejs为例）：
 brew install nodejs   ----安装nodejs
 brew install nodejs@2.1   ----安装指定版本的软件
 brew update nodejs   ----升级nodejs
 brew remove nodejs   ---卸载nodejs
 brew list   ----列出当前安装的软件
+
+
+
 
 安装Git
 在终端输入git命令，系统就会提示安装xcode，跟着提示安装完xcode，git也就安装上了，因为xcode里集成了git，若想单独安装也是可以的。
@@ -66,8 +70,27 @@ Redis安装：
 本机安装版本5.0.4
 安装目录/usr/local
 
+tomcat9安装：
+安装目录：/Users/guwei/Applications/tomcat9/
+
+zookeeper安装：使用brew安装
+brew info zookeeper  //查看zookeeper版本信息
+brew install zookeeper   //安装zookeeper
+安装后，在/usr/local/etc/zookeeper/目录下，已经有了缺省的配置文件---zoo.cfg
+
+
+kafka安装：
+安装目录：/Users/guwei/Applications/kafka/
+安装版本：kafka_2.12-2.3.0
+
 Docker安装
-版本：18.09.4
+版本：19.03.2
+
+nginx安装：
+brew install nginx
+主页文件目录：/usr/local/var/www
+配置文件目录：/usr/local/etc/nginx/nginx.conf
+端口号设置为8585
 
 .m2文件夹： ～/.m2
 
