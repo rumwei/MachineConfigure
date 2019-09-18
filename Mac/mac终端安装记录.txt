@@ -85,6 +85,13 @@ kafka安装：
 
 Docker安装
 版本：19.03.2
+Docker已经安装了Centos7
+安装命令：docker pull centos:7
+运行命令：docker run -ti centos:7 /bin/bash
+
+Docker已经安装了Ubuntu:16.04
+安装命令：docker pull ubuntu:16.04
+运行命令：docker run -it ubuntu:16.04 bash
 
 nginx安装：
 brew install nginx
