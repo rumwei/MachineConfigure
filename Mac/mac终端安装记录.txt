@@ -99,6 +99,12 @@ brew install nginx
 配置文件目录：/usr/local/etc/nginx/nginx.conf
 端口号设置为8585
 
+
+终端改造：
+使用oh-my-zsh与iterm2搭配组合来改造已有的终端工具。
+具体可参考(如果还可用的话)：https://www.jianshu.com/p/64344229778a
+
+
 .m2文件夹： ～/.m2
 
 
