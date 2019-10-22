@@ -103,9 +103,84 @@ brew install nginx
 终端改造：
 使用oh-my-zsh与iterm2搭配组合来改造已有的终端工具。
 具体可参考(如果还可用的话)：https://www.jianshu.com/p/64344229778a
+更换完后，由于.zshrc 没有配置相关环境变量设置，需要将bash 中.bash_profile 全部环境变量加入，方法：
+执行vim ~/.zshrc
+在文本的# User configuration部分添加如下内容：source ~/.bash_profile
+执行source ～/.zshrc
+
 
 
 .m2文件夹： ～/.m2
+
+idea破解文件所在目录：/opt/idea_pojie_file/jetbrains-agent.jar
+
+
+ELK安装：
+brew install elasticsearch
+版本6.8.3
+elasticsearch的相关安装位置
+安装目录：/usr/local/Cellar/elasticsearch/6.8.3l/
+日志目录：/usr/local/var/log/elasticsearch/
+插件目录：/usr/local/var/elasticsearch/plugins/
+配置目录：/usr/local/etc/elasticsearch/
+elasticsearch启动：brew services start elasticsearch
+默认端口：9200
+暂时没改密码
+http://localhost:9200/_cat/indices
+http://localhost:9200/logstash-2019.04.10/_search?size=100  //中间的logstash-2019.04.10就是上一行查出来的值
+
+安装kibana
+brew install kibana
+版本：6.8.3
+kibana的相关安装位置
+安装目录：/usr/local/Cellar/kibana/6.8.3/
+配置目录：/usr/local/etc/kibana/
+启动：kibana
+
+安装logstash
+版本：7.3.2
+logstash的相关安装位置
+安装目录：/usr/local/Cellar/logstash/7.3.2/
+配置目录：/usr/local/etc/logstash
+启动：sudo logstash -f /usr/local/etc/logstash/logstash.conf
+
+安装filebeat
+版本：6.2.4
+filebeat的相关安装位置
+安装目录：/usr/local/Cellar/filebeat/6.2.4/
+配置目录：/usr/local/etc/filebeat/
+缓存目录：/usr/local/var/lib/filebeat/
+启动：filebeat -c filebeat.yml
+
+mac hosts文件所在目录：/etc/hosts
+
+grafana安装
+安装命令：brew install grafana
+启动：brew services start grafana
+版本：6.4.2
+相关安装目录：
+安装目录：/usr/local/Cellar/grafana/6.4.2
+配置文件应该位于/usr/local/etc/grafana/grafana.ini
+日志文件应该位于/usr/local/var/log/grafana/grafana.log
+如果你想手动安装一个插件放在这里：/usr/local/var/lib/grafana/plugins
+默认的sqlite数据库位于 /usr/local/var/lib/grafana
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
