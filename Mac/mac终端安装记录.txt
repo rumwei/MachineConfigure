@@ -1,5 +1,5 @@
 该记录从新装系统之后开始：
-
+------------------------------------------------------------
 Brew安装：
 Brew是Mac系统下的包管理工具，类似CentOS下的yum等
 Brew安装：
@@ -12,13 +12,13 @@ brew install nodejs@2.1   ----安装指定版本的软件
 brew update nodejs   ----升级nodejs
 brew remove nodejs   ---卸载nodejs
 brew list   ----列出当前安装的软件
-
+------------------------------------------------------------
 
 
 
 安装Git
 在终端输入git命令，系统就会提示安装xcode，跟着提示安装完xcode，git也就安装上了，因为xcode里集成了git，若想单独安装也是可以的。
-
+------------------------------------------------------------
 配置与GitHub仓库相关连的SSH：
 * git config --global user.name "rumwei"
 * git config --global user.email "isguwei@163.com"
@@ -26,7 +26,7 @@ brew list   ----列出当前安装的软件
 执行完第三步，即可利用如下命令来查看所生成的密匙，复制该密钥
 cat ~/.ssh/id_rsa.pub
 然后登陆github网站，进入账户-->Settings-->SSH and GPG keys-->New SSH key,然后将上面～/.ssh/id_rsa.pub文件中的内容粘贴进来，保存即可，之后即可使用git clone等命令了。
-
+------------------------------------------------------------
 安装Python3
 Mac系统是自带python的，只是版本较低，为2.*版本，可进/System/Library/Frameworks/Python.framework/Version目录查看，因此可以直接安装较高的3.*版本，安装命令如下：
 brew install python3
@@ -34,7 +34,7 @@ brew install python3
 安装路径：/usr/local/bin/python3
 安装版本：3.7.1
 对应的pip使用：python3 -m pip blabla
-
+------------------------------------------------------------
 安装mysql：
 去mysql官网下载的.dmg文件安装，下载的是MySQL Community Server 8.0.13
 root用户名：root
@@ -45,60 +45,61 @@ PATH=$PATH:/usr/local/mysql/bin
 之后即可在终端通过mysql -uroot -p来登陆数据库了
 数据库中自带有information_schema,mysql,performance_schema,sys四个初始数据库
 新增perch用户，并赋予perch用户fortest数据库的所有控制权限
-
+------------------------------------------------------------
 安装nodejs(自带npm)
 去https://nodejs.org/zh-cn/download/官网下载macOS安装包node-v10.14.2.pkg
 然后双击根据提示安装即可
            版本            安装目录  
 Node.js    v10.14.2       /usr/local/bin/node
 npm        v6.4.1         /usr/local/bin/npm
-
+------------------------------------------------------------
 安装virtualenv
 python3 -m pip install virtualenv
 成功安装16.2.0版本的virtualenv
-
+------------------------------------------------------------
 安装jdk,采用安装包的形式安装
 版本java8
 安装目录：/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/bin
 idea使用的jvm配置在idea自身的安装目录下
-
+------------------------------------------------------------
 安装gpg--用于上传构建到maven中央仓库
 安装命令：brew install gpg
-
+------------------------------------------------------------
 Redis安装：
 具体教程见有道云笔记
 本机安装版本5.0.4
 安装目录/usr/local
-
+------------------------------------------------------------
 tomcat9安装：
 安装目录：/Users/guwei/Applications/tomcat9/
-
+------------------------------------------------------------
 zookeeper安装：使用brew安装
 brew info zookeeper  //查看zookeeper版本信息
 brew install zookeeper   //安装zookeeper
 安装后，在/usr/local/etc/zookeeper/目录下，已经有了缺省的配置文件---zoo.cfg
 
-
+------------------------------------------------------------
 kafka安装：
 安装目录：/Users/guwei/Applications/kafka/
 安装版本：kafka_2.12-2.3.0
-
+------------------------------------------------------------
 Docker安装
 版本：19.03.2
 Docker已经安装了Centos7
 安装命令：docker pull centos:7
 运行命令：docker run -ti centos:7 /bin/bash
-
+------------------------------------------------------------
 Docker已经安装了Ubuntu:16.04
 安装命令：docker pull ubuntu:16.04
 运行命令：docker run -it ubuntu:16.04 bash
-
+------------------------------------------------------------
 nginx安装：
 brew install nginx
 主页文件目录：/usr/local/var/www
 配置文件目录：/usr/local/etc/nginx/nginx.conf
+日志目录：/usr/local/var/log/nginx
 端口号设置为8585
-
+------------------------------------------------------------
 
 终端改造：
 使用oh-my-zsh与iterm2搭配组合来改造已有的终端工具。
@@ -108,13 +109,12 @@ brew install nginx
 在文本的# User configuration部分添加如下内容：source ~/.bash_profile
 执行source ～/.zshrc
 
-
+------------------------------------------------------------
 
 .m2文件夹： ～/.m2
-
+------------------------------------------------------------
 idea破解文件所在目录：/opt/idea_pojie_file/jetbrains-agent.jar
-
-
+------------------------------------------------------------
 ELK安装：
 brew install elasticsearch
 版本6.8.3
@@ -128,7 +128,7 @@ elasticsearch启动：brew services start elasticsearch
 暂时没改密码
 http://localhost:9200/_cat/indices
 http://localhost:9200/logstash-2019.04.10/_search?size=100  //中间的logstash-2019.04.10就是上一行查出来的值
-
+------------------------------------------------------------
 安装kibana
 brew install kibana
 版本：6.8.3
@@ -136,14 +136,14 @@ kibana的相关安装位置
 安装目录：/usr/local/Cellar/kibana/6.8.3/
 配置目录：/usr/local/etc/kibana/
 启动：kibana
-
+------------------------------------------------------------
 安装logstash
 版本：7.3.2
 logstash的相关安装位置
 安装目录：/usr/local/Cellar/logstash/7.3.2/
 配置目录：/usr/local/etc/logstash
 启动：sudo logstash -f /usr/local/etc/logstash/logstash.conf
-
+------------------------------------------------------------
 安装filebeat
 版本：6.2.4
 filebeat的相关安装位置
@@ -151,19 +151,38 @@ filebeat的相关安装位置
 配置目录：/usr/local/etc/filebeat/
 缓存目录：/usr/local/var/lib/filebeat/
 启动：filebeat -c filebeat.yml
-
+------------------------------------------------------------
 mac hosts文件所在目录：/etc/hosts
-
+------------------------------------------------------------
 grafana安装
-安装命令：brew install grafana
+安装命令：二进制包解压安装
 启动：brew services start grafana
 版本：6.4.2
 相关安装目录：
-安装目录：/usr/local/Cellar/grafana/6.4.2
-配置文件应该位于/usr/local/etc/grafana/grafana.ini
-日志文件应该位于/usr/local/var/log/grafana/grafana.log
-如果你想手动安装一个插件放在这里：/usr/local/var/lib/grafana/plugins
-默认的sqlite数据库位于 /usr/local/var/lib/grafana
+安装目录：/usr/local/Cellar/grafana-6.4.3
+配置文件应该位于/usr/local/Cellar/grafana-6.4.3/conf
+
+------------------------------------------------------------
+RocketMQ
+安装目录：/usr/local/Cellar/rocketmq
+版本：4.4.0
+------------------------------------------------------------
+Golang 安装
+版本：1.13.6
+安装方式：pkg安装包安装
+安装目录：/usr/local/go
+版本查看命令：go version
+------------------------------------------------------------
+nacos1.2.0安装
+安装目录：/Users/guwei/work/software/nacos
+启动：
+rumwei % cd /Users/guwei/work/software/nacos/bin  
+rumwei % sh startup.sh -m standalone
+关闭：sh shutdown.sh
+默认端口：8848
+首页地址：http://localhost:8848/nacos
+启动日志查看：/nacos/logs/start.out
+
 
 
 
