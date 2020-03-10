@@ -36,15 +36,25 @@ brew install python3
 对应的pip使用：python3 -m pip blabla
 ------------------------------------------------------------
 安装mysql：
-去mysql官网下载的.dmg文件安装，下载的是MySQL Community Server 8.0.13
+去mysql官网下载的.dmg文件安装，下载的是MySQL Community Server 5.7.29
 root用户名：root
-root密码：2011g&......
+root密码：root
 安装完成后在～/.bash_profile文件中（如果没有则新建）加入如下配置：
 PATH=$PATH:/usr/local/mysql/bin
 添加完成后，在终端执行source ~/.bash_profile
 之后即可在终端通过mysql -uroot -p来登陆数据库了
 数据库中自带有information_schema,mysql,performance_schema,sys四个初始数据库
-新增perch用户，并赋予perch用户fortest数据库的所有控制权限
+卸载mysql：
+首先进入设置，在设置的最下一栏有一个mysql的图标，点进去之后点击停止mysql，然后删除如下文件即可
+sudo rm /usr/local/mysql
+sudo rm -rf /usr/local/mysql*
+sudo rm -rf /Library/StartupItems/MySQLCOM
+sudo rm -rf /Library/PreferencePanes/My*
+rm -rf ~/Library/PreferencePanes/My*
+sudo rm -rf /Library/Receipts/mysql*
+sudo rm -rf /Library/Receipts/MySQL*
+sudo rm -rf /var/db/receipts/com.mysql.*
+再回到设置就可以看到mysql图标已经不见了，说明卸载成功
 ------------------------------------------------------------
 安装nodejs(自带npm)
 去https://nodejs.org/zh-cn/download/官网下载macOS安装包node-v10.14.2.pkg
